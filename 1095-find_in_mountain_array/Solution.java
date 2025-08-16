@@ -1,11 +1,5 @@
 class Solution{
-    public static void main(String[] args) {
-    Solution x= new Solution();
-    int[] test={0,1,2,4,2,1};
-    int result= x.findInMountainArray(3, test);
-    System.out.println("result is: "+result);
-    }
-    public int findInMountainArray(int target, int[]arr) {
+public int findInMountainArray(int target, int[]arr) {
         int peakindex= findPeak(arr);
         if(target==arr[peakindex]){
             return peakindex;
